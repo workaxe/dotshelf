@@ -1469,7 +1469,7 @@ a.domaincheck_active {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 100;
+  z-index: 1000000;
   background: #65C5AE;
   overflow: auto;
 }
