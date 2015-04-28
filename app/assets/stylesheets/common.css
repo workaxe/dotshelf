@@ -475,7 +475,7 @@ header {
   /* Saf3.2+, Chrome */
 
   transition: all 0.2s ease-out;
-	z-index:100000;
+	z-index:10000;
 }
 .animated_bg {
   position: fixed;
