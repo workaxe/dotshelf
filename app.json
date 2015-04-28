@@ -1,0 +1,16 @@
+{
+    "name": "dotshelf",
+    "description": "Find awesome domains",
+    "website": "http://dotshelf.herokuapp.com",
+    "repository": "https://github.com/workaxe/dotshelf",
+    "logo": "http://dotshelf.herokuapp.com/dotshelf_logo.png",
+    "keywords": [
+        "productivity",
+        "domain finder",
+        "name generator"
+    ],
+    "scripts": {
+        "postdeploy": "bundle exec rake db:setup && bundle exec rake db:seed"
+    },
+    "generator": "https://www.expeditedssl.com/heroku-button-maker"
+}
