@@ -698,6 +698,7 @@ dots.robot._echo = function(diff)
 
 dots.robot.create_buy_btn = function(domains,insidea)
 {
+	return;
 	var this_id = new Date().getTime() + "_" + Math.floor(Math.random() * (9999 - 1000 + 1)) + 1000;
 	
 	var add_html = '<form id="'+this_id+'" action="http://dotshelter.com/domain-registration/index.php?action=check_availability&formaction=domain-name-registration.php" method="post"  target="_blank">';
