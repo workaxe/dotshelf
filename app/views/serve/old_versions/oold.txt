@@ -1,0 +1,55 @@
+<h1>Search Domain</h1>
+
+<div class="a_left">
+	<ul class="domain_search_input">
+		<li>
+			<label>Begins With</label><br />
+			<textarea id="tb" name="f1">adsfadsf
+asdfadsfas
+asdfadsf
+asdgasdgs
+asdgasdgas
+asgdasgda
+asdgasgdas
+sdfsdfds
+sdfsdfsdf
+sdfsdfsd
+			</textarea>
+		</li>
+		<li>
+			<label>Ends With</label><br />
+			<textarea id="te" name="f2">asdf
+sdgasdg
+asg
+sg
+asg
+asd
+			</textarea>
+		</li>
+		<li>
+			<div class="endings_holder"></div>
+			<div class="clearfix"></div>
+		</li>
+		<li>
+			<label>Top Levels</label><br />
+			<button class="btn domaincheck domaincheck_active">COM</button>
+		  <button class="btn domaincheck">NET</button>
+		  <button class="btn domaincheck">ORG</button>
+		  <button class="btn domaincheck">CO</button>
+			<button class="btn domaincheck">IT</button>
+		  <button class="btn domaincheck">IO</button>
+		  <button class="btn domaincheck">LY</button>
+		  <button class="btn domaincheck">IN</button>
+		</li>
+		<li>
+			<input type="text" name="char_limit" placeholder="Max Characters"><br />
+			<input type='button' name="checker" value="Run Domain Checker!">
+		</li>
+	</ul>
+</div>
+<div class="a_left">
+	<div id="status"></div>
+	<ul id="results" class="cards"></ul>
+</div>
+
+<script type="text/javascript" charset="utf-8"> get_endings(); </script>

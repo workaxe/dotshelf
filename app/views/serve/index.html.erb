@@ -1,0 +1,24 @@
+<%= render :partial => 'flashes' %>
+<%= render :partial => 'home' %>
+<%= render :partial => 'main' %>
+<%= render :partial => 'user' %>
+<%= render :partial => 'shelf' %>
+<%= render :partial => 'footer' %>
+
+<div class="droplist">
+	<div class="triangle"></div>
+	<ul class="list">
+		<div class="droplist_loader"></div>
+	</ul>
+</div>
+
+
+<% if flash[:notice] %>
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function(){
+			setTimeout(function(){
+				dots.robot.notify("<%= flash[:notice] %>");
+			},1e3);
+		});
+	</script>
+<% end %>

@@ -1,0 +1,2 @@
+# endings.json u herzaman çekiyor
+# checked this session => arrayde olan domainleri birdaha check etme.

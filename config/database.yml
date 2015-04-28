@@ -1,0 +1,23 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: dc_development
+  pool: 5
+  username: dc
+  password:
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: dc_test
+  pool: 5
+  username: dc
+  password:
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: dc_production
+  pool: 5
+  username: dc
+  password:

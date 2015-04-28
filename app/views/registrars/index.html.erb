@@ -1,0 +1,27 @@
+<h1>Listing registrars</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Extra</th>
+    <th>Url param</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @registrars.each do |registrar| %>
+  <tr>
+    <td><%= registrar.name %></td>
+    <td><%= registrar.extra %></td>
+    <td><%= registrar.url_param %></td>
+    <td><%= link_to 'Show', registrar %></td>
+    <td><%= link_to 'Edit', edit_registrar_path(registrar) %></td>
+    <td><%= link_to 'Destroy', registrar, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Registrar', new_registrar_path %>

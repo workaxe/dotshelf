@@ -1,0 +1,102 @@
+<%= render :partial => 'flashes' %>
+
+<div id="main">
+	
+	<%= render :partial => "main_header" %>
+
+  <div class="filterbar inner_pages">
+		
+		<div style="float:right;margin-top:5px;">API VERSION: V1 (ALPHA)</div>
+		<h1>Developers</h1>
+		
+		<ul>
+			<li><h3>Multiple Whois</h3></li>
+			<li class="hdli">
+				<p>Bulk query to check domains available or not</p>
+				<div class="code">
+					<span>Parameters</span>
+					<table>
+						<tbody>
+							<tr>
+								<th>Name</th>
+								<th>Data Type</th>
+								<th>Required / Optional</th>
+								<th>Description</th>
+							</tr>
+          	
+							<tr>
+								<td>domains</td>
+								<td>String</td>
+								<td>Required</td>
+								<td>Comma separated domain list</td>
+							</tr>
+          	
+						</tbody>
+					</table>
+					
+					<br>
+					
+					<span>Example Test URL Request</span>
+					<table>
+						<tbody>
+							<tr>
+								<td>http://dotshelf.com/api/domains/check/?domains=domain1.com,domain2.net,domain3.co,domain4.me,domain5.mn</td>
+							</tr>
+						</tbody>
+					</table>
+					
+				</div>
+				
+			</li>
+			
+			<li><h3>Related Words</h3></li>
+			<li class="hdli">
+				<p>Returns related words from given word</p>
+				<div class="code">
+					<span>Parameters</span>
+					<table>
+						<tbody>
+							<tr>
+								<th>Name</th>
+								<th>Data Type</th>
+								<th>Required / Optional</th>
+								<th>Description</th>
+							</tr>
+          	
+							<tr>
+								<td>word</td>
+								<td>String</td>
+								<td>Required</td>
+								<td>Input word to get related words</td>
+							</tr>
+          	
+						</tbody>
+					</table>
+					
+					<br>
+					
+					<span>Example Test URL Request</span>
+					<table>
+						<tbody>
+							<tr>
+								<td>http://dotshelf.com/api/domains/related_words/?word=dot</td>
+							</tr>
+						</tbody>
+					</table>
+					
+				</div>
+				
+			</li>
+		</ul>
+		
+		<div style="float:left;width:100%;text-align:center;display:block;">
+			DOTSHELF API V2 IS COMING SOON, WITH ALL NEW FEATURES. V1 WILL BE SUPPORTED IN THE NEXT VERSION.
+		</div>
+		
+  </div>
+
+	
+</div>
+
+
+<%= render :partial => 'footer' %>

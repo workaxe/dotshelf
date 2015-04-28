@@ -1,0 +1,35 @@
+<%= render :partial => 'serve/flashes' %>
+
+<div id="main">
+	
+	<%= render :partial => "serve/main_header" %>
+
+  <div class="filterbar inner_pages">
+		<h1>Listing Categories</h1>
+		
+		<h5><%= link_to 'New Ending', new_ending_path %></h5>
+		
+		<hr>
+		
+		<table width="100%">
+		<% @endings.each do |ending| %>
+		  <tr>
+		    <td><%= ending.title %></td>
+		    <td><%= ending.language %></td>
+		    <td><%= link_to 'Show', ending %></td>
+		    <td><%= link_to 'Edit', edit_ending_path(ending) %></td>
+		    <td><%= link_to 'Destroy', ending, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+		  </tr>
+		<% end %>
+		</table>
+
+		<br />
+
+		
+  </div>
+
+	
+</div>
+
+
+<%= render :partial => 'serve/footer' %>

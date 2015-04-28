@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= @shelf.label %></h1>
+
+<%= button_to "delete", {:controller => :shelves, :action => 'destroy', :id => @shelf.id }, :confirm => "Are you sure?", :method => :delete %>
+
+<p>
+  <b>User:</b>
+  <%= @shelf.user.email %>
+</p>
+
+<hr>
+
+<p>
+	<b>Shelf domains:</b>
+</p>
+
+<ul id="domains">
+	<% @domains.each do |domain| %>
+	<li><%= domain.full_body %> <a href="javascript:void(0);" class="remove_from_shelf" data-domain-id="<%= domain.id %>" data-shelf-id="<%= domain.shelf_id %>">Remove from shelf?</a></li>
+	<% end %>
+</ul>
+
+<%= link_to 'Edit', edit_shelf_path(@shelf) %> |
+<%= link_to 'Back', shelves_path %>

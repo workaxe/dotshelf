@@ -1,0 +1,37 @@
+<div id="user_screen" class="user_screen no_select" style="display:none;">
+	<div class="closer">
+		<span aria-hidden="true" data-icon="&#xe004;"></span>
+	</div>
+	<div class="former">
+		<div class="top_logo">
+			<img src="/assets/white_logo.png">
+		</div>
+		
+		<div class="login_signup_notify"></div>
+		
+		<div class="user_form form_login" style="display:none;">
+			<input type="text" id="us_login_email" placeholder="<%= t(:email) %>">
+			<input type="password" id="us_login_password" placeholder="<%= t(:password) %>">
+			<button id="us_login_btn"><%= t(:sign_in) %></button>
+			<div class="or" id="already_signup"><%= t(:not_a_member) %></div>
+			<div class="right_button" id="reset_password_btn"><%= t(:reset_password) %></div>
+		</div>
+		
+		<div class="user_form form_signup" style="display:none;">
+			<input type="text" id="us_signup_email" placeholder="<%= t(:email) %>">
+			<input type="password" id="us_signup_password" placeholder="<%= t(:password) %>">
+			<input type="password" id="us_signup_password_again" placeholder="<%= t(:repeat_password) %>">
+			<button id="us_signup_btn"><%= t(:sign_up) %></button>
+			<div class="or" id="already_login"><%= t(:already_a_member_sign_in) %></div>
+			<div class="right_button fbconnect"><%= t(:connect_fb) %></div>
+		</div>
+		
+		<div class="user_form form_reset" style="display:none;">
+			<input type="text" id="us_reset_email" placeholder="<%= t(:email) %>">
+			<button id="us_reset_btn"><%= t(:reset) %></button>
+			<div class="or" id="already_login"><%= t(:already_a_member_sign_in) %></div>
+			<div class="right_button fbconnect"><%= t(:connect_fb) %></div>
+		</div>
+		
+	</div>
+</div>

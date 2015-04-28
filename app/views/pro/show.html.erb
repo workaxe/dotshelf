@@ -1,0 +1,5 @@
+<% if current_user.membership_type == 'pro' %>
+	You're already a pro.
+<% else %>
+	<%= link_to "Buy Now at 5.99!", current_user.buy_pro_url %>
+<% end %>

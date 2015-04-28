@@ -1,0 +1,22 @@
+<div id="left_sidebar" class="sidebar left">
+
+	<div class="sidebar-header clearfix">
+		<div class="label left pregular">SHELFS</div>
+		<a href="/shelves/new" class="btn-hide-sidebar block right"><i>+</i></a>
+	</div>
+
+	<ul class="sidebar-folders pbold">
+		
+		<% current_user.all_shelves.each do |shelf| %>
+		<li class="droppable">
+			<a href="/shelves/<%= shelf.id %>" class="block clearfix" title="<%= shelf.label %>">
+				<!-- <img src="assets/category-image.jpg" width="34" height="34" alt="Category Image" class="block category-image left"> -->
+				<span class="block category-name left"><%= shelf.label %></span>
+				<div class="unread right"><%= shelf.domains.count %></div>
+			</a>
+		</li>
+		<% end %>
+		
+	</ul>
+</div>
+<!-- /sidebar -->

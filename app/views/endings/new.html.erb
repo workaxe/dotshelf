@@ -1,0 +1,19 @@
+<%= render :partial => 'serve/flashes' %>
+
+<div id="main">
+	
+	<%= render :partial => "serve/main_header" %>
+
+  <div class="filterbar inner_pages">
+		<h1>New Category</h1>
+
+		<%= render 'form' %>
+
+		<%= link_to 'Back', endings_path %>
+  </div>
+
+	
+</div>
+
+
+<%= render :partial => 'serve/footer' %>

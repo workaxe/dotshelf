@@ -1,0 +1,74 @@
+tr:
+  keywords: Anahtar Kelimeler
+  extend: Kategoriler
+  give_in: Something went wrong, please try again.
+  wrong: Something went wrong, please try again.
+  added: Rafa eklenmiştir!
+  completed: Tamamlandı
+  empties: shelf_id veya domain_id geçerli değil. Lütfen tekrar deneyiniz.
+  no_access: Yetkiniz yok
+  not_registered: Bu eposta adresi kullanılmamaktadır
+  max: Karakter limiti?
+  cg: No results.
+  new_search: Başka bir arama yapmak istermisiniz?
+  cf: Üzgünüz, güzel bir alan adı bulamadık.
+  login: Giriş Yap
+  number:
+    human:
+      decimal_units:
+        units:
+          unit: ''
+  tr_cats: Kategoriler (Türkçe)
+  cats: Kategoriler (İngilizce)
+  logout: Çıkış Yap
+  notify_expire: Süresi dolduğunda bildir
+  whois: Kime ait
+  empties_email: shelf_id veya email yanlıştır. Lütfen tekrar deneyiniz.
+  invited: Yazdığınız eposta adresine davet mesajınız gönderilmiştir.
+  already_invited: Eposta adresi zaten davetli. Daveti tekrarlamak için emailin yetkisini silebilirsiniz.
+  accessed: Yetki verildi.
+  really_want_to: Aramanızı gerçekten iptal etmek istiyormusunuz?
+  availables: Müsaitler
+  not_availables: Müsait olmayanlar
+  created_and_added: Yeni rafınız yaratıldı ve bu adres rafa eklendi
+  wrong_i: 
+  wrong_r: 
+  email_already_registered: Bu eposta adresi hali hazırda kullanılmaktadır.
+  password_is_short: Şifreniz en az 8 karakter uzunluğunda olmalıdır.
+  passwords_not_match: Girmiş olduğunuz şifreler birbirleriyle uyuşmamaktadır.
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            password:
+              too_short: 
+        ending:
+          attributes:
+            language:
+              blank: 
+  logged_in_succesfully: Başarıyla giriş yaptınız
+  not_a_member: Üye değilmisiniz? 5 saniyenizi alır.
+  reset_password: Şifremi Unuttum
+  already_a_member_sign_in: Üyemisiniz? Giriş Yapın!
+  connect_fb: Facebook ile Bağlanın
+  sign_in: Giriş Yap
+  sign_up: Üye Ol
+  email: E-posta Adresi
+  password: Şifre
+  repeat_password: Şifre Tekrarı
+  reset: Şifremi Sıfırla
+  contact: İletişim
+  how_it_works: Nasıl Çalışıyor?
+  errors:
+    format: ! '%{attribute} %{message}'
+  buy: Satın Al
+  check_out: Hepsini Al
+  domains: alan adı
+  empty: Boş
+  create_a_new_shelf: Yeni bir raf yaratın
+  available_domains_found: adet boş alan adı bulundu
+  lock_to_bottom: Alt Tarafa Sabitle
+  unlock: Sabitlemeyi İptal Et
+  api: API
+  a_support: Destek

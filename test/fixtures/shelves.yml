@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  label: MyString
+  user_id: 1
+  shelf_type: MyString
+
+two:
+  label: MyString
+  user_id: 1
+  shelf_type: MyString

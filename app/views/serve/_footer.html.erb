@@ -1,0 +1,13 @@
+<div class="footer no_select">
+	<div class="left">
+		<% if I18n.locale.to_s != "en" %>
+		<a href="/?l=en" class="original_lng">Original Language</a> &nbsp;&nbsp;
+		<% end %>
+		<a href="/about"><%= t(:how_it_works) %></a> &nbsp;&nbsp;
+		<a href="/developers"><%= t(:api) %></a> &nbsp;&nbsp;
+		<a href="https://dotshelf.uservoice.com" target="_blank"><%= t(:a_support) %></a> &nbsp;&nbsp;
+	</div>
+	<div class="right">
+		<img src="/assets/mlogo.png">
+	</div>
+</div>

@@ -1,0 +1,83 @@
+en:
+  keywords: Keywords
+  extend: Categories
+  give_in: Something went wrong, please try again.
+  wrong: Something went wrong, please try again.
+  added: Added to shelf!
+  completed: Completed
+  empties: shelf_id or domain_id is wrong. Please try again.
+  no_access: No access
+  not_registered: This email is not registered
+  max: Character limit?
+  cg: No results.
+  new_search: Start new session?
+  cf: Unfortunately, we did not find anything.
+  login: Login
+  devise:
+    registrations:
+      updated: Your account has been updated!
+  number:
+    human:
+      decimal_units:
+        units:
+          unit: ''
+      format:
+        delimiter: ''
+    percentage:
+      format:
+        delimiter: ''
+    precision:
+      format:
+        delimiter: ''
+  tr_cats: Categories in Turkish
+  cats: Categories
+  logout: Logout
+  notify_expire: Notify when available
+  whois: Whois
+  empties_email: shelf_id or email is wrong. Please try again.
+  invited: Your invite mail has been sent successfully.
+  already_invited: This email already invited. Please revoke access to invite this email again.
+  accessed: Access has been granted.
+  really_want_to: Do you really want to finish your session?
+  availables: Availables
+  not_availables: Not availables
+  created_and_added: New shelf has been created and domain added
+  wrong_i: 
+  wrong_r: 
+  email_already_registered: This email is already registered.
+  password_is_short: Your password must be at least 8 characters long.
+  passwords_not_match: ! 'Password doesn''t match confirmation '
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            password:
+              too_short: 
+        ending:
+          attributes:
+            language:
+              blank: 
+  logged_in_succesfully: You have logged in successfully
+  not_a_member: Not a member? It only takes 5 seconds.
+  reset_password: Reset My Password
+  already_a_member_sign_in: Already a member? Sign In!
+  connect_fb: Connect with Facebook
+  sign_in: Sign In
+  sign_up: Sign Up
+  email: E-mail Address
+  password: Password
+  repeat_password: Repeat Password
+  reset: Reset Password
+  contact: Contact
+  how_it_works: How It Works
+  buy: Buy
+  check_out: Check Out
+  domains: domains
+  empty: Empty
+  create_a_new_shelf: Create a new shelf
+  available_domains_found: available domains found
+  lock_to_bottom: Lock to Bottom
+  unlock: Unlock
+  api: API
+  a_support: Support
