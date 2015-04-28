@@ -40,7 +40,7 @@
 					<table>
 						<tbody>
 							<tr>
-								<td>http://dotshelf.herokuapp.com/api/domains/check/?domains=domain1.com,domain2.net,domain3.co,domain4.me,domain5.mn</td>
+								<td><%= "#{request.protocol}#{request.host_with_port}" %>/api/domains/check/?domains=domain1.com,domain2.net,domain3.co,domain4.me,domain5.mn</td>
 							</tr>
 						</tbody>
 					</table>
@@ -79,7 +79,7 @@
 					<table>
 						<tbody>
 							<tr>
-								<td>http://dotshelf.herokuapp.com/api/domains/related_words/?word=dot</td>
+								<td><%= "#{request.protocol}#{request.host_with_port}" %>/api/domains/related_words/?word=dot</td>
 							</tr>
 						</tbody>
 					</table>
