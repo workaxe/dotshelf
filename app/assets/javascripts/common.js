@@ -1262,10 +1262,24 @@ dots.robot.binds = function()
 		maximumSelectionSize: 3
 	});
 	
+	dots.open_curtain();
+	
 	$(document).click(function(event) {
 		last_clicked_element = $(event.target);
 	});
 	
+};
+
+dots.open_curtain = function() {
+	setTimeout(function(){
+		$('#m_curtain .logo_holder').fadeIn(700, function(){
+
+			setTimeout(function(){
+				$('#m_curtain').fadeOut();
+			},1000);
+			
+		});
+	},1000);
 };
 
 dots.robot.brainstorm = function(word,src)

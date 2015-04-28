@@ -504,6 +504,32 @@ header {
   cursor: pointer;
   margin-top: -20px;
 }
+
+#m_curtain {
+	width:100%;
+	height:100%;
+	background:#fff;
+	z-index:100000;
+	left:0;
+	top:0;
+	position:fixed;
+}
+
+.about_texter {
+	font-size:18px;padding-top:20px;padding-bottom:20px;
+	margin-left:0px !important;
+}
+
+.m_logo_holder {
+	width:240px;
+	height:60px;
+	position:fixed;
+	top:50%;
+	left:50%;
+	margin-left:-130px;
+	margin-top:-30px;
+}
+
 .container .main_badge_logo {
   width: 70px;
   float: left;

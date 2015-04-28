@@ -1,7 +1,10 @@
 <div class="footer no_select">
 	<div class="left">
 		<% if I18n.locale.to_s != "en" %>
-		<a href="/?l=en" class="original_lng">Original Language</a> &nbsp;&nbsp;
+		<a href="/?l=en" class="original_lng">English</a> &nbsp;&nbsp;
+		<% end %>
+		<% if I18n.locale.to_s != "tr" %>
+		<a href="/?l=tr" class="original_lng">Türkçe</a> &nbsp;&nbsp;
 		<% end %>
 		<a href="/about"><%= t(:how_it_works) %></a> &nbsp;&nbsp;
 		<a href="/developers"><%= t(:api) %></a> &nbsp;&nbsp;
