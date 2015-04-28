@@ -93,7 +93,6 @@ GEM
     mocha (1.1.0)
       metaclass (~> 0.0.1)
     multi_json (1.11.0)
-    mysql2 (0.3.18)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-sftp (2.1.2)
@@ -104,6 +103,7 @@ GEM
     netrc (0.10.3)
     nifty-generators (0.4.6)
     orm_adapter (0.5.0)
+    pg (0.18.1)
     polyglot (0.3.5)
     power_assert (0.2.3)
     rack (1.4.5)
@@ -195,8 +195,8 @@ DEPENDENCIES
   less-rails
   localeapp
   mocha
-  mysql2
   nifty-generators
+  pg
   rails (= 3.2.12)
   rvm-capistrano
   sass-rails (~> 3.2.3)
