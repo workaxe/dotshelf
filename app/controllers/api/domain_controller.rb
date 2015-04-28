@@ -71,19 +71,7 @@ class Api::DomainController < ApplicationController
       :found => return_domains,
       :pro_domains => pro_reserve_domains
     }
-    
-    #if current_user.blank? || current_user.membership_type != "pro"
-    #  return_object = {
-    #    :found => return_domains,
-    #    :pro_count => pro_reserve_domains.length
-    #  }
-    #else
-    #  return_object = {
-    #    :found => return_domains,
-    #    :pro_domains => pro_reserve_domains
-    #  }
-    #end
-    
+
     render :json => return_object
   end
    
@@ -103,8 +91,6 @@ class Api::DomainController < ApplicationController
     check_db = RelatedWord.find_by_word(word).blank?
     
     if check_db
-      
-      ##
       
       check_all = false
       check_oth = false
@@ -157,16 +143,10 @@ class Api::DomainController < ApplicationController
         model_word.save
       end
       
-      ##
-      
     else
-      
-      ##
       
       model_word = RelatedWord.find_by_word(word)
       return_all_words = model_word.body
-      
-      ##
       
     end
     
@@ -276,17 +256,6 @@ class Api::DomainController < ApplicationController
     # Domain Length Scoring Ended
     
     
-    
-    # shelf_scores Algoryhtm
-    
-    #   check_domain_shelfs = Shelf.find_by
-    
-    
-    
-    # End
-    
-    
-    
     # CVCV Scoring (experimental)
     
     # cvcv_score = 0
@@ -354,7 +323,7 @@ class Api::DomainController < ApplicationController
         JSON.parse(http.read)
       end
     rescue
-
+      # return empty response to client, so it will retry
     end
   end
   
@@ -367,7 +336,7 @@ class Api::DomainController < ApplicationController
         JSON.parse(http.read)
       end
     rescue
-
+      # return empty response to client, so it will retry
     end
   end
     

@@ -102,7 +102,7 @@ class Api::UserController < ApplicationController
       
       render :json => {:status => true, :seen => rrr}
     else
-      #
+      
       notifications = []
 
       unless current_user.blank?
@@ -127,7 +127,7 @@ class Api::UserController < ApplicationController
       end
 
       render :json => notifications
-      #
+      
     end
     
   end
