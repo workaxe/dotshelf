@@ -1,0 +1,2 @@
+module EndingsHelper
+end

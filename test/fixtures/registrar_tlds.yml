@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  tld: MyString
+  price: 1
+  registrar_id: 1
+
+two:
+  tld: MyString
+  price: 1
+  registrar_id: 1

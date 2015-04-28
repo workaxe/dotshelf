@@ -1,0 +1,104 @@
+<div id="home">
+	<div class="home_logo no_select">
+		
+		<div class="logo_left ">
+			
+			<div class="logo_holder">
+				<div class="dotshelf_logo">
+					<div class="circle"></div>
+					<div class="triangle"></div>
+				</div>
+				<img src="/assets/only_text_logo.png" width="230" height="60" alt="dotshelf | genius domain search tool">
+			</div>
+			
+		</div>
+		<div class="extra_right">
+			<div class="shelves popup_holder global_shelves_button">
+				<div aria-hidden="true" data-icon="&#xe000;"></div>
+			</div>
+			
+			<% if user_signed_in? %>
+			<div class="user global_user_button" onclick="dots.users.logout();" id="home_login_button">
+				<%= t(:logout) %>
+			</div>
+			<% else %>
+			<div class="user global_user_button" onclick="dots.users.show_login();" id="home_login_button">
+				<%= t(:login) %>
+			</div>
+			<% end %>
+			
+		</div>
+		
+		
+		
+	</div>
+	
+	
+	<div class="home_search_block">
+		
+		<div class="cat_select">
+			<input type="text" id="beginnings" value="" tabindex="1">
+			<div class="beginning_placeholder"><%= t(:keywords) %></div>
+		</div>
+		
+		<div class="cat_select">
+						
+			<select multiple="" tabindex="-1" id="endings" class="endings_holder">
+				
+				<% if I18n.locale.to_s == "tr" %>
+				
+					<% unless @endings[:tr].blank? %>
+						<optgroup label="<%= t(:tr_cats) %>">
+							<% @endings[:tr].each do |e| %>
+							<option value="<%= e.id %>"><%= e.title %></option>
+							<% end %>
+						</optgroup>
+					<% end %>
+					
+				<% end %>
+				
+				<optgroup label="<%= t(:cats) %>">
+					<% @endings[:en].each do |e| %>
+					<option value="<%= e.id %>"><%= e.title %></option>
+					<% end %>
+				</optgroup>
+				
+			</select>
+			<div class="dropdown_placeholder"><%= t(:extend) %></div>
+		</div>
+		
+		<div class="select_combo no_select">
+			<div class="location_select bx bx5">
+				<div class="domainchecks home_dc">
+					<a class="domaincheck domaincheck_active">COM</a>
+				  <a class="domaincheck">NET</a>
+				  <a class="domaincheck">ORG</a>
+				  <a class="domaincheck">CO</a>
+					<a class="domaincheck">IT</a>
+				  <a class="domaincheck">IO</a>
+				  <a class="domaincheck">LY</a>
+				  <a class="domaincheck">IN</a>
+				</div>
+			</div>
+			<div class="price_select bx bx2">
+				<div class="norm">
+					<input type="text" class="char_limit" name="char_limit" onclick="this.select();" placeholder="<%= t(:max) %>">
+				</div>
+			</div>
+		</div>
+		
+		<button id="robot_button" class="bfgb no_select" href="javascript:void(0);">
+			 <div aria-hidden="true" data-icon="&#xf0d0;"></div>
+			<!--<div class="dot_btn"></div> -->
+		</button>
+		
+	</div>
+	
+</div>
+
+<script type="text/javascript" charset="utf-8">
+	$(function(){
+		dots.robot.get_endings();
+		dots.robot.state('home');
+	});
+</script>

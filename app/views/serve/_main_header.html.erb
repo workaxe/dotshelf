@@ -1,0 +1,27 @@
+<header id="header" class='disabledz no_select'>
+	<div class="container">
+		
+		<a href="/" class="main_logo">
+			<img src="/assets/white_logo.png">
+		</a>
+		
+
+		
+		<div class="right">
+			<div class="shelves popup_holder global_shelves_button">
+				<div aria-hidden="true" data-icon="&#xe000;"></div>
+			</div>				
+			<% if user_signed_in? %>
+			<div class="user global_user_button" onclick="dots.users.logout();" id="main_login_button">
+				<%= t(:logout) %>
+			</div>
+			<% else %>
+			<div class="user global_user_button" onclick="dots.users.show_login();" id="main_login_button">
+				<%= t(:login) %>
+			</div>
+			<% end %>
+			
+		</div>
+		
+	</div>
+</header>

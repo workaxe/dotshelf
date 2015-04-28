@@ -1,0 +1,85 @@
+<div id="main">
+	
+	<%= render :partial => "main_header" %>
+
+  <!--
+    <div class="center">
+    	<div class="progress_mini">
+    		<img src="/assets/pers_loader.gif" height="55">
+    	</div>
+    	<div class="progress" id="progress_bar">
+    		<div class="percent">%0</div>
+    		<div class="bar" style="width:0%;"></div>
+    		<div class="bg"></div>
+    	</div>
+    	<div class="cancel_btn">
+    		<span><div aria-hidden="true" data-icon="&#xe004;"></div></span>
+    	</div>
+    </div>
+  -->
+
+  <div class="filterbar fixed_f">
+
+    <div class="fb_container">
+      <div class="f_left">
+        <div class="f_available">
+          <span class="f_number">0</span>
+          <span class="f_label"><%= t(:available_domains_found) %></span>
+        </div>
+      </div>
+
+      <div class="f_right">
+        <div class="location_select bx bx5">
+        		<div class="domainchecks main_dc">
+        			<a class="domaincheck">COM</a>
+        		  <a class="domaincheck">NET</a>
+        		  <a class="domaincheck">ORG</a>
+        		  <a class="domaincheck">CO</a>
+        			<a class="domaincheck">IT</a>
+        		  <a class="domaincheck">IO</a>
+        		  <a class="domaincheck">LY</a>
+        		  <a class="domaincheck">IN</a>
+        		</div>
+        </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+    <div class="f_progress">
+
+      <div class="progress" id="progress_bar">
+    		<div class="percent">%0</div>
+    		<div class="bar" style="width:0%;"></div>
+    		<div class="bg"></div>
+    	</div>
+
+    </div>
+
+  </div>
+
+
+	<div class="main_results_holder">
+		<div class="not_find">
+			<%= t(:cf) %> <a href="javascript:void(0);"><%= t(:new_search) %></a>
+		</div>
+		
+		<div class="avails">
+			<span class='avail active'><%= t(:availables) %></span>
+			<span class='not_avail'><%= t(:not_availables) %></span>
+		</div>
+		
+		<ul class="main_results" id="results"></ul>
+	</div>
+	
+	<div class="clearfix"></div>
+	
+	<div class="lockbar lockbutton is_not_locked">
+		<i>
+			<span class="notlocked">&#x25BC; <%= t(:lock_to_bottom) %></span>
+			<span class="locked">&#x25B2; <%= t(:unlock) %></span>
+		</i>
+	</div>
+	
+</div>
+
+
+<div class="animated_bg"></div>

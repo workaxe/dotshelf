@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>dotshelf</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+
+	<script type="text/javascript" charset="utf-8">
+		var lang = {};
+		lang['completed'] = '<%= t(:completed) %>';
+		lang['give_in'] = '<%= t(:give_in) %>';
+		lang['added'] = '<%= t(:added) %>';
+		lang['notify_expire'] = '<%= t(:notify_expire) %>';
+		lang['whois'] = '<%= t(:whois) %>';
+		lang['really_want_to'] = '<%= t(:really_want_to) %>';
+		lang['login'] = '<%= t(:login) %>';
+		lang['logout'] = '<%= t(:logout) %>';
+		lang['created_and_added'] = '<%= t(:created_and_added) %>';
+		lang['logged_in_succesfully'] = '<%= t(:logged_in_succesfully) %>';
+		lang["check_out"] = '<%= t(:check_out) %>';
+		lang["domains"] = '<%= t(:domains) %>';
+		lang["empty"] = '<%= t(:empty) %>';
+		lang["buy"] = '<%= t(:buy) %>';
+		
+	</script>
+</head>
+<body>
+	
+<%= yield %>
+
+</body>
+</html>

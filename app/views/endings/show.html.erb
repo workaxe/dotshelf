@@ -1,0 +1,41 @@
+<%= render :partial => 'serve/flashes' %>
+
+<div id="main">
+	
+	<%= render :partial => "serve/main_header" %>
+
+  <div class="filterbar inner_pages">
+		<p id="notice"><%= notice %></p>
+
+		<h1><%= @ending.title %></h1>
+		
+		<h5>
+			<%= link_to 'Edit', edit_ending_path(@ending) %> or go 
+			<%= link_to 'Back', endings_path %>
+		</h5>
+		
+		<hr>
+
+		<div class="bonibon_holder">
+			<% @endings_all = @ending.content.split(",") %>
+	  	<% @endings_all.each do |ending| %>
+			<span class="bonibon"><%= ending %></span>
+			<% end %>
+		</div>
+		
+		<div class="clearfix">
+			
+		</div>
+		
+		<br>
+		
+		
+		<h5>Language: <span style="color:#5D6B67;font-weight:bold;"><%= @ending.language %></span></h5>
+		
+  </div>
+
+	
+</div>
+
+
+<%= render :partial => 'serve/footer' %>

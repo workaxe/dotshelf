@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @registrar.name %>
+</p>
+
+<p>
+  <b>Extra:</b>
+  <%= @registrar.extra %>
+</p>
+
+<p>
+  <b>Url param:</b>
+  <%= @registrar.url_param %>
+</p>
+
+
+<%= link_to 'Edit', edit_registrar_path(@registrar) %> |
+<%= link_to 'Back', registrars_path %>

@@ -1,0 +1,58 @@
+<div class="header">
+	<div class="logo">
+		<img src="/assets/logo.png">
+	</div>
+	<div class="robot">
+		<input type="text" id="tb" value="">
+	</div>
+</div>
+
+
+<% if user_signed_in? %>
+<%= link_to('Logout', destroy_user_session_path, :method => :delete) %>	
+<% else %>
+<%= link_to('Login', new_user_session_path)  %>
+<% end %>
+
+<ul class="domain_search_input clearfix">
+	<li>
+		<div class="tagsinput_holder">
+			
+		</div>
+	</li>
+	<li>
+		<div class="tagsinput_holder">
+			<div class="left">
+				<input type="text" id="te" value="">
+			</div>
+			<div class="right_side">
+				<div class="button_holder" id="right_triangle_button">
+					<div class="triangle"></div>
+				</div>
+			</div>
+		</div>
+		
+	</li>
+	<li>
+		<div class="endings_holder"></div>
+		<div class="clearfix"></div>
+	</li>
+	<li>
+		<button class="domaincheck domaincheck_active">COM</button>
+	  <button class="domaincheck">NET</button>
+	  <button class="domaincheck">ORG</button>
+	  <button class="domaincheck">CO</button>
+		<button class="domaincheck">IT</button>
+	  <button class="domaincheck">IO</button>
+	  <button class="domaincheck">LY</button>
+	  <button class="domaincheck">IN</button>
+	</li>
+	<li>
+		<input type="text" name="char_limit" placeholder="Max Characters"><br />
+		<input type='button' name="checker" value="Run Domain Checker!">
+	</li>
+</ul>
+
+<ul class="bookmark-list clearfix" id="results"></ul>
+
+<script type="text/javascript" charset="utf-8"> dots.robot.get_endings(); </script>
