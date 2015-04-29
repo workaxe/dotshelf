@@ -7,4 +7,6 @@ Originally created by <a href="http://emiralp.com" target="_blank">Emir Alp</a> 
 
 You can find <a href="http://dotshelf.herokuapp.com/" target="_blank">demo here</a>.
 
+<br><br>
+
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/workaxe/dotshelf)
